@@ -1,0 +1,218 @@
+/* Start Reset */
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+input,
+select {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+/* End Reset */
+/* Start Globule Rules */
+:root {
+  --py-dark-blue: hsl(233, 47%, 7%);
+  --py-dst-blue: hsl(244, 38%, 16%);
+  --py-soft-violet: hsl(277, 64%, 61%);
+  --nl-white: hsl(0, 0%, 100%);
+  --nl-slightly-pg: hsla(0, 0%, 100%, 0.75);
+  --nl-slightly-sh: hsla(0, 0%, 100%, 0.6);
+  --fw400: 400;
+  --fw700: 700;
+  --ff-inter: "Inter", sans-serif;
+  --ff-lex: "Lexend Deca", sans-serif;
+}
+/* End Globule Rules */
+/* Start Style */
+body {
+  height: 100vh;
+  background: var(--py-dark-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* #Card */
+.card {
+  margin: 0 10px;
+  width: 365px;
+  height: 90%;
+  background-color: var(--py-dst-blue);
+  border-radius: calc(1rem / 3);
+  overflow: hidden;
+  text-align: center;
+  font-family: var(--ff-inter);
+}
+/* #img Section */
+.img_sec {
+  height: 32%;
+  width: 100%;
+  background: linear-gradient(
+      hsla(277, 100%, 25%, 0.514) 100%,
+      rgba(255, 255, 255, 0)
+    ),
+    url("images/image-header-mobile.jpg");
+  background-size: cover;
+}
+/* #info */
+
+/* ##Title */
+h1 {
+  font-size: 2.5rem;
+  color: var(--nl-white);
+  padding: 2rem 1rem;
+  letter-spacing: -1px;
+  font-weight: var(--fw700);
+}
+h1 span {
+  color: var(--py-soft-violet);
+}
+/* ##main Paragraph */
+.main_pgh {
+  font-size: 1rem;
+  padding: 0 3.5rem;
+  color: var(--nl-slightly-pg);
+  font-weight: var(--fw400);
+}
+
+/* ##Stats Section */
+.overview {
+  padding: 1.3rem 1rem;
+}
+/* ### title number */
+.overview h2 {
+  font-size: 1.8rem;
+  font-weight: var(--fw700);
+  color: var(--nl-white);
+}
+/* ### Paragraph */
+.overview p {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-family: var(--ff-lex);
+  letter-spacing: 0.1rem;
+  color: var(--nl-slightly-sh);
+}
+/* End style */
+/* Start Responsive */
+@media (min-width: 768px) {
+  .card {
+    height: 25rem;
+    width: 60rem;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .img_sec {
+    background: linear-gradient(
+        hsla(277, 100%, 25%, 0.514) 100%,
+        rgba(255, 255, 255, 0)
+      ),
+      url("images/image-header-desktop.jpg");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+  }
+  .info {
+    text-align: left;
+  }
+  h1 {
+    padding: 2rem 3rem;
+  }
+  .stat_box {
+    margin-left: 2rem;
+  }
+  .overview {
+    padding: 2rem 0.5rem;
+    margin: 1rem;
+    display: inline-block;
+  }
+  .overview p {
+    font-size: 1rem;
+  }
+}
+/* End Responsive */
+/* Start Attribute */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  bottom: 0.6rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--nl-white);
+  font-family: var(--ff-inter);
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+/* End */
