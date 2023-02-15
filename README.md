@@ -9,7 +9,6 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 - [My process](#my-process)
   - [Built with](#built-with)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 
 ## Overview
@@ -27,10 +26,6 @@ Hello This Project From Front End Mentor
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-
-### Useful resources
-
-- [box-shadow](https://cssgenerator.org/box-shadow-css-generator.html)
 
 ## Author
 
